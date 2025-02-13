@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class TwoSum{
+public class ThreeSum{
     public  int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) 
         {
