@@ -11,7 +11,7 @@ class MinOperations {
             if (x >= k) return count;
             if (i < a.length && (j >= b.size() || a[i] <= b.get(j))) y = a[i++];
             else y = b.get(j++);
-            long t = 2L * x + y; // test overflow
+            long t = 2L * x + y; 
             b.add(t < k ? (int) t : k);
         }
     }
