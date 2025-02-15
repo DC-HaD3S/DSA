@@ -2,7 +2,7 @@
 import java.util.Arrays;
 
 public class ThreeSum{
-    public  int[] twoSum(int[] nums, int target) {
+    public  int[] threesum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) 
         {
             for (int j = i + 1; j < nums.length; j++) 
@@ -18,8 +18,8 @@ public class ThreeSum{
     }
     public static void main(String args[]){
         int a[]={1,2,3,4,5};
-        TwoSum b= new TwoSum();
+        ThreeSum b= new ThreeSum();
         
-        System.out.println(Arrays.toString(b.twoSum(a,6)));
+        System.out.println(Arrays.toString(b.threesum(a,6)));
     }
 }
