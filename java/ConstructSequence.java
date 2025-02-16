@@ -1,7 +1,7 @@
 public class ConstructSequence {
 
     public int[] constructDistancedSequence(int targetNumber) {
-        // Initialize the result sequence with size 2*n - 1 filled with 0s
+        // Initialize the result sequence with size 2*n - 1 filled with 0
         int[] resultSequence = new int[targetNumber * 2 - 1];
 
         // Keep track of which numbers are already placed in the sequence
