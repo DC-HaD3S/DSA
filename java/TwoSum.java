@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 
 import java.util.Arrays;
 
-public class ThreeSum{
-    public  int[] threesum(int[] nums, int target) {
-=======
-import java.util.Arrays;
-
-public class threeSum{
+public class TwoSum{
     public  int[] twoSum(int[] nums, int target) {
->>>>>>> 133946a (seventhday)
         for (int i = 0; i < nums.length; i++) 
         {
             for (int j = i + 1; j < nums.length; j++) 
@@ -25,16 +18,8 @@ public class threeSum{
     }
     public static void main(String args[]){
         int a[]={1,2,3,4,5};
-<<<<<<< HEAD
-        ThreeSum b= new ThreeSum();
-        
-        System.out.println(Arrays.toString(b.threesum(a,6)));
-    }
-}
-=======
-        threeSum b= new threeSum();
+        TwoSum b= new TwoSum();
         
         System.out.println(Arrays.toString(b.twoSum(a,6)));
     }
 }
->>>>>>> 133946a (seventhday)
