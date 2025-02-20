@@ -1,36 +1,29 @@
-import java.util.ArrayList;
-import java.util.List;
-class HappyNumber
-{
-    // Step 1: Define the backtracking function
-    private void backtrack(int n, String curr, List<String> happyStrings)
-    {  
-        // Step 2: If the current string reaches length 'n', store it and return
-        if (curr.length() == n)
-        {  
-            happyStrings.add(curr);
-            return;
-        }
-
-        // Step 3: Iterate over possible characters ('a', 'b', 'c')
-        for (char ch : new char[]{'a', 'b', 'c'})
-        {  
-            // Step 4: Ensure the new character is different from the last one
-            if (curr.isEmpty() || curr.charAt(curr.length() - 1) != ch)
-            {  
-                // Step 5: Recursively generate the next character
-                backtrack(n, curr + ch, happyStrings);  
+class HappyNumber {
+    public void solve(int n, StringBuilder curr, String[] result, int k, int[] count) {
+        if (curr.length() == n) {
+            count[0]++;
+            if(count[0]==k){
+                result[0] = curr.toString();
             }
+            return;
+        }   
+        for (char ch = 'a'; ch <= 'c'; ch++) {
+            if (curr.length() > 0 && curr.charAt(curr.length() - 1) == ch)
+                continue;           
+            
+            curr.append(ch);
+
+            
+            solve(n, curr, result,k,count);
+            if (!result[0].isEmpty()) return;
+            curr.deleteCharAt(curr.length() - 1);
         }
     }
-
-    // Step 6: Main function to generate happy strings
-    public String getHappyString(int n, int k)
-    {
-        List<String> happyStrings = new ArrayList<>();
-        backtrack(n, "", happyStrings);  // Step 7: Start backtracking from an empty string
-
-        // Step 8: Return k-th happy string if it exists, else return ""
-        return (k > happyStrings.size()) ? "" : happyStrings.get(k - 1);  
+    public String getHappyString(int n, int k) {
+        StringBuilder curr = new StringBuilder();
+        String[] result = {""};
+        int[] count = {0};
+        solve(n, curr, result,k,count);
+        return result[0];
     }
 }
