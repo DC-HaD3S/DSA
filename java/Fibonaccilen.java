@@ -1,7 +1,7 @@
 import java.util.HashSet;
 class Fibonaccilen {
     public int lenLongestFibSubseq(int[] arr) {
-        HashSet<Integer> hashSet = new HashSet<>();
+        HashSet<Integer> hashSet = new HashSet<>();//using Hashset
 		
 		for(int num : arr)
 			hashSet.add(num);
