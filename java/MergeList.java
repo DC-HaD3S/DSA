@@ -1,4 +1,4 @@
-class Solution {
+class MergList {
     public String mergeAlternately(String word1, String word2) {
         StringBuilder result = new StringBuilder();
         int i = 0;
