@@ -4,7 +4,6 @@ class SoddSumofArray {
         int odd = 0, even = 1; 
         int result = 0;
         int sum = 0;
-
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
             if (sum % 2 == 1) {
@@ -15,7 +14,6 @@ class SoddSumofArray {
                 even++;
             }
         }
-
         return result;
     }
 }
