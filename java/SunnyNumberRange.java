@@ -1,12 +1,10 @@
 import java.util.Scanner;
-
 public class SunnyNumberRange {
     // Method to check if a number is a perfect square
     public static boolean isPerfectSquare(int num) {
         int sqrt = (int) Math.sqrt(num);
         return (sqrt * sqrt) == num;
     }
-
     // Method to print all Sunny Numbers in a range
     public static void findSunnyNumbers(int start, int end) {
         System.out.println("Sunny Numbers in the range " + start + " to " + end + " are:");
