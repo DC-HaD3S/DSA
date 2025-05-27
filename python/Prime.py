@@ -2,7 +2,7 @@ class Prime:
     def checkPrime(self, num):
         flag=True
         x=2
-        for x in range(2, num // 2 ):#starts from 2 till n/2
+        for x in range(2, num // 2 ):
             if(num%x==0):
                 flag=False
                 return flag

@@ -7,7 +7,6 @@ public class prime {
             if (num%i==0) {
                 count++;
             }
-            
         }if(count>=2){
             System.out.println("is not a prime number");
         }else {
