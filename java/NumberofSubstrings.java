@@ -1,5 +1,4 @@
 public class NumberofSubstrings{
-  
     public int numberOfSubstrings(String s) {
         char[] ch = s.toCharArray();
         int[] abc = new int[3];
