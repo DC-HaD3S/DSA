@@ -7,8 +7,6 @@ public class Reverse {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         sc.close();
-        
-         
         int ans = 0;
         while(num>0){
             int lastdigit = num % 10;
