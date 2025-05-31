@@ -14,7 +14,6 @@ class ReverseVowels {
             char temp = word[start];
             word[start] = word[end];
             word[end] = temp;
-            
             start++;
             end--;
         }
