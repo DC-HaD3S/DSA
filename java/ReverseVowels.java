@@ -17,7 +17,6 @@ class ReverseVowels {
             start++;
             end--;
         }
-        
         String answer = new String(word);
         return answer;
     }
